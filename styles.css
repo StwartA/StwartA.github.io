@@ -1,0 +1,122 @@
+/* Variables para colores */
+:root {
+    --primary-color: #4CAF50; /* Verde vibrante */
+    --secondary-color: #388E3C; /* Verde oscuro */
+    --background-color: #121212; /* Negro muy oscuro */
+    --text-color: #E0E0E0; /* Gris claro para el texto */
+    --card-background: #1E1E1E; /* Gris oscuro para secciones */
+    --link-color: #81C784; /* Verde claro para enlaces */
+}
+
+/* Estilos Generales y Reseteo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Encabezado (Header) */
+header {
+    background-color: var(--card-background);
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+header h4 {
+    color: var(--text-color);
+    font-weight: 300;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+/* Contenido Principal y Texto */
+p {
+    background-color: var(--card-background);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 1.1em;
+    border-left: 5px solid var(--secondary-color); /* Toque de color */
+}
+
+/* Imagen */
+img {
+    display: block; /* Para que la imagen ocupe su propia línea */
+    margin: 20px auto; /* Centra la imagen */
+    border-radius: 50%; /* Hace la imagen redonda (o puedes usar un border-radius más pequeño como 8px) */
+    border: 5px solid var(--primary-color);
+    object-fit: cover; /* Asegura que la imagen se vea bien dentro del círculo/borde */
+    transition: transform 0.3s ease; /* Transición suave */
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.05); /* Ligeramente agranda al pasar el ratón */
+    border-color: var(--link-color);
+}
+
+/* Sección de Información (Div) */
+div {
+    background-color: var(--card-background);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+div h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+/* Lista de Enlaces (ul) */
+ul {
+    list-style: none; /* Remueve los puntos de la lista */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Enlaces (a) */
+a {
+    color: var(--link-color);
+    text-decoration: none; /* Remueve el subrayado */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    display: inline-block; /* Permite aplicar padding y margin */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    text-decoration: underline;
+}
+
